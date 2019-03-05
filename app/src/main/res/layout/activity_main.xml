@@ -6,6 +6,23 @@
     android:background="#14c2c1"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/unifest"
+        android:foregroundGravity="top"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:layout_below="@+id/logo"
+        android:id="@+id/viewpager"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        ></android.support.v4.view.ViewPager>
 
 
 </RelativeLayout>
